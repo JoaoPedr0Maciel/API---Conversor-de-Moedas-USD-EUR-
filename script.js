@@ -11,7 +11,6 @@ btn.addEventListener('click', async () => {
         const doll = parseFloat(api.USDBRL.high);
         const eur = parseFloat(api.EURBRL.high);
 
-        console.log({ selectedValue: selected.value, optDollarValue: optDollar.value, optEuroValue: optEuro.value, doll, eur });
         if (input.value.length > 0) {
             if (selected.value === optDollar.value) {
                 const dollarConverte = input.value / doll
